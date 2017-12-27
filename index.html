@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="The 10-Question Star Wars Trivia Quiz"
+    <meta name="description" content="See if you can finish this in under 12parsecs">
+    <title>Star Wars Trivia Quiz</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="introPage" class="introPage">
+        <h1>Star Wars Trivia Quiz</h1>
+        <img id="image" class="wrapper" src="http://www3.pictures.zimbio.com/mp/0_oNybv-XMpx.jpg" alt="Star wars A New Hope">
+        <button id="beginGame" class="btn-theme">Begin Quiz</button>
+      </div>
+      <div class="results hidden">
+        <p id="numCorrect">Score: <span id="Score"></span></p>
+        <div class="resultsContainer hidden">
+          <p>
+            Congratulations! you got <span id="correct"></span> out of 10
+          </p>
+          <img id="endImage" src="https://jasmineshanelle.files.wordpress.com/2015/10/top-10-the-best-star-wars-characters.jpg" alt="Star Wars logo" height="500" width="600px">
+        </div>
+      </div>
+      <div class="questions">
+				<p id="singleQuestion"></p>
+				<p id="progress">
+          (You are on question <span id="number">NUMBER</span> of 10)
+        </p>
+          <form id="form" class="hidden">
+            <input type="radio" name="answers" id="answer0" value="0" class="radio"><span id="choice0">answer 1</span><br>
+            <input type="radio" name="answers" id="answer1" value="1" class="radio"><span id="choice1">answer 2</span><br>
+            <input type="radio" name="answers" id="answer2" value="2" class="radio"><span id="choice2">answer 3</span><br>
+            <input type="radio" name="answers" id="answer3" value="3" class="radio"><span id="choice3">answer 4</span><br>
+            <input type="submit" name="submit" id="submit" value="Submit" class="submit">
+          </form>
+      </div>
+      <h1 id="notify"></h1>
+      <div class="imageNotifications hidden">
+        <img src="" id="yodaDarth">
+      </div>
+
+      <!-- <img src="https://media.giphy.com/media/l1KuhBCqxOoJyr0m4/giphy.gif" class="hidden" id="mostImpressive" alt="Darth Vader">
+      <img src="https://media.giphy.com/media/3ohuAxV0DfcLTxVh6w/giphy.gif" class="hidden" id="muchToLearn" alt="Yoda"> -->
+
+
+      <button class="nextQuestion hidden">Next</button>
+      <button id="reset" class="hidden">Reset</button>
+
+      <audio autoplay>
+        <source class="audioFile" src="Theme-song.mp3" type="audio/mpeg">
+      </audio>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
